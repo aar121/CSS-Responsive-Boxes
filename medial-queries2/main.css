@@ -1,3 +1,54 @@
-body {
-  background: papayawhip;
+* {
+  outline: 1px solid red;
+  color: white;
+  text-align: center;
+}
+.container {
+  background: orange;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cde {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 2;
+  min-height: 20vh;
+}
+.cde div {
+  flex-grow: 1;
+}
+header, footer {
+  max-height: 15vh;
+  flex-grow: 1
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main {
+  flex-grow: 2;
+  min-height: 50vh;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  * {
+    color: black;
+  }
+  .container {
+    background: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header {
+    width: 100%;
+    min-height: 20vh;
+  }
+  .wrapper {
+    flex-grow: 2;
+  }
+  footer {
+    min-height: 80vh;
+  }
 }
